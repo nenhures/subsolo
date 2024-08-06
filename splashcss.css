@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.wrapper {
+  background: rgb(255,255,255);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 45%, rgba(0,0,0,1) 45%);
+  background-size:100%;
+  background-repeat:no-repeat;
+  overflow:hidden;
+}
+
+.dragtext {
+  font-size:60px;
+	font-family: 'Comfortaa', sans-serif;
+	cursor:pointer;
+  color:white;
+  mix-blend-mode: difference;
+  margin:0;
+  padding:0;
+  z-index:10;
+  font-size: 60px;
+}
+
+#a.dragtext:hover, #a.dragtext:active {
+  color:red;
+}
+#b.dragtext:hover, #b.dragtext:active {
+  color:blue;
+}
+#c.dragtext:hover, #c.dragtext:active {
+  color:yellow;
+}
+#d.dragtext:hover, #d.dragtext:active {
+  color:green;
+}
+#e.dragtext:hover, #e.dragtext:active {
+  color:purple;
+}
+#f.dragtext:hover, #f.dragtext:active {
+  color:orange;
+}
+#g.dragtext:hover, #g.dragtext:active {
+  color:brown;
+}
+
+.dragwrap {
+	display:flex;
+	justify-content: center;
+  align-items: center;
+	height:85%;
+}
+
+#presstodrag {
+	color:rgb(108, 108, 108);
+	font-size:12px;
+  bottom:0;
+  position:fixed;
+  text-align:center;
+  width:100%;
+  line-height:0.4;
+}
+
+#presstodrag a {
+  font-size:20px;
+  text-decoration:none;
+}
+
+#presstodrag a:hover, .presstodrag a:active {
+  color:white;
+}
+
+button {
+  background-color:transparent;
+  color:rgb(108, 108, 108);
+  position:fixed;
+  top:0;
+  margin:5px;
+  right:0;
+  font-size:15px;
+  padding:0px 4px;
+  border:none;
+}
+
+button:hover, button:active {
+  color:red;
+}
+
+#instagram {
+  left:0;
+  margin:0 0 1px 6px;
+  padding:0;
+  bottom:0;
+  position:fixed;
+}
+
+#instagram a {
+  text-decoration:none;
+  font-size:20px;
+  color:rgb(108, 108, 108);
+}
+
+#instagram a:hover, .instagram a:active {
+  color:red;
+}
+
+#opencall {
+  position:fixed;
+  font-family: 'Playfair Display', serif;
+  font-size:30px;
+  margin: 0;
+  top: 20%;
+  left: 50%;
+  transform:rotate(-45deg);
+}
+
+#opencall a {
+  text-decoration:none;
+  color:red;
+}
+
+#opencall a:hover, .opencall a:active {
+ color: cyan;
+}
+
+@media screen and (min-device-width:1024px) {
+  .wrapper {background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);}
+  .dragtext {font-size:100px}
+  .presstodrag {font-size:12px;}
+  .dragwrap {height:95%}
+  #opencall {top:22%; left:52%;}
+  button {font-size:20px;}
